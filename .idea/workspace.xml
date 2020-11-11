@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e043ad55-f1e8-422a-a432-54cec54ee6d7" name="Default Changelist" comment="" />
+    <list default="true" id="e043ad55-f1e8-422a-a432-54cec54ee6d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,27 +19,63 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1k6Fa9mgpTM1sBNhZcMlKkcKEil" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program Files\GoLand 2020.2.3\project\GeeRPC\main" />
+      <recent name="D:\Program Files\GoLand 2020.2.3\project\GeeRPC" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="870" y="341" key="FileChooserDialogImpl" timestamp="1605062274278">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="870" y="341" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1605062274278" />
+    <state x="812" y="448" key="Github.ShareDialog" timestamp="1605055227576">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="812" y="448" key="Github.ShareDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605055227576" />
+    <state x="716" y="168" key="Github.UntrackedFilesDialog" timestamp="1605054287431">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="716" y="168" key="Github.UntrackedFilesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605054287431" />
+    <state x="625" y="208" key="SettingsEditor" timestamp="1605060302298">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="625" y="208" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1605060302298" />
     <state x="641" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605014289118">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="641" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1605014289118" />
+    <state x="789" y="158" width="600" height="855" key="find.popup" timestamp="1605062916111">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="789" y="158" width="600" height="855" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1605062916111" />
     <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1605018478148">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
