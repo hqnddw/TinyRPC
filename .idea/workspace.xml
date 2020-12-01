@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e043ad55-f1e8-422a-a432-54cec54ee6d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -50,7 +50,7 @@
       <recent name="D:\Program Files\GoLand 2020.2.3\project\GeeRPC" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Test.client_test.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GeeRPC" />
       <working_directory value="$PROJECT_DIR$" />
@@ -58,6 +58,26 @@
       <filePath value="$PROJECT_DIR$/main/main.go" />
       <package value="GeeRPC" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GeeRPC" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="GeeRPC" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/client_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test GeeRPC" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GeeRPC" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="GeeRPC" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="service_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -72,6 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.client_test.go" />
+        <item itemvalue="Go Test.go test GeeRPC" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.service_test.go" />
       </list>
@@ -84,7 +106,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成编码解码测试" />
     <MESSAGE value="完成客户端" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成客户端" />
+    <MESSAGE value="完成服务注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成服务注册" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1000" y="463" key="#Custom_Plugin_Repositories" timestamp="1606303178748">
@@ -95,14 +118,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="747" y="376" key="#Notifications/0.0.2048.1112@0.0.2048.1112" timestamp="1606303034808" />
-    <state x="600" y="33" width="1219" height="1046" key="CommitChangelistDialog2" timestamp="1605879504490">
+    <state x="600" y="33" width="1219" height="1046" key="CommitChangelistDialog2" timestamp="1606806706241">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="600" y="33" width="1219" height="1046" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1605879504490" />
-    <state x="384" y="93" key="DiffContextDialog" timestamp="1605879486950">
+    <state x="600" y="33" width="1219" height="1046" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1606806706241" />
+    <state x="384" y="93" key="DiffContextDialog" timestamp="1606806701740">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="384" y="93" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605879486950" />
+    <state x="384" y="93" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1606806701740" />
     <state x="870" y="341" key="FileChooserDialogImpl" timestamp="1605062274278">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -115,22 +138,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="716" y="168" key="Github.UntrackedFilesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605054287431" />
-    <state width="2005" height="399" key="GridCell.Tab.0.bottom" timestamp="1606805875153">
+    <state width="2005" height="276" key="GridCell.Tab.0.bottom" timestamp="1606827837645">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="399" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1606805875153" />
-    <state width="2005" height="399" key="GridCell.Tab.0.center" timestamp="1606805875153">
+    <state width="2005" height="276" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1606827837645" />
+    <state width="2005" height="276" key="GridCell.Tab.0.center" timestamp="1606827837645">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="399" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1606805875153" />
-    <state width="2005" height="399" key="GridCell.Tab.0.left" timestamp="1606805875153">
+    <state width="2005" height="276" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1606827837645" />
+    <state width="2005" height="276" key="GridCell.Tab.0.left" timestamp="1606827837645">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="399" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1606805875153" />
-    <state width="2005" height="399" key="GridCell.Tab.0.right" timestamp="1606805875153">
+    <state width="2005" height="276" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1606827837645" />
+    <state width="2005" height="276" key="GridCell.Tab.0.right" timestamp="1606827837645">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="399" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1606805875153" />
+    <state width="2005" height="276" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1606827837645" />
     <state width="2005" height="256" key="GridCell.Tab.1.bottom" timestamp="1605687450121">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -147,25 +170,33 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="256" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605687450121" />
-    <state x="625" y="208" key="SettingsEditor" timestamp="1606303211084">
+    <state x="605" y="290" key="IDE.errors.dialog" timestamp="1606811240040">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="625" y="208" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1606303211084" />
-    <state x="617" y="285" key="Vcs.Push.Dialog.v2" timestamp="1605879513468">
+    <state x="605" y="290" key="IDE.errors.dialog/0.0.2048.1112@0.0.2048.1112" timestamp="1606811240040" />
+    <state x="990" y="296" width="1011" height="721" key="SettingsEditor" timestamp="1606811211209">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="285" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1605879513468" />
+    <state x="990" y="296" width="1011" height="721" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1606811211209" />
+    <state x="617" y="285" key="Vcs.Push.Dialog.v2" timestamp="1606806714012">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="285" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1606806714012" />
     <state x="641" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605014289118">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="641" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1605014289118" />
+    <state x="819" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606806664844">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="819" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112@0.0.2048.1112" timestamp="1606806664844" />
     <state x="789" y="158" width="600" height="855" key="find.popup" timestamp="1605062916111">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="789" y="158" width="600" height="855" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1605062916111" />
-    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1606805375250">
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1606827501894">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1606805375250" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1606827501894" />
   </component>
 </project>

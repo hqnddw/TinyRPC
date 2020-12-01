@@ -1,6 +1,7 @@
 package GeeRPC
 
 import (
+	"fmt"
 	"go/ast"
 	"log"
 	"reflect"
@@ -53,8 +54,8 @@ func (s *service) call(m *methodType, argv, replyv reflect.Value) error {
 
 type service struct {
 	name   string
-	typ    reflect.Type
-	rcvr   reflect.Value
+	typ    reflect.Type  //结构体的类型
+	rcvr   reflect.Value //结构体的实例本身
 	method map[string]*methodType
 }
 
@@ -62,6 +63,7 @@ func newService(rcvr interface{}) *service {
 	s := new(service)
 	s.rcvr = reflect.ValueOf(rcvr)
 	s.name = reflect.Indirect(s.rcvr).Type().Name()
+	fmt.Println("DEBUG---输入类型的名字:", s.name)
 	s.typ = reflect.TypeOf(rcvr)
 	if !ast.IsExported(s.name) {
 		log.Fatalf("rpc server: %s is not a valid service name", s.name)
@@ -70,11 +72,15 @@ func newService(rcvr interface{}) *service {
 	return s
 }
 
+//将输入类型下的方法放入map中
 func (s *service) registerMethods() {
 	s.method = make(map[string]*methodType)
 	for i := 0; i < s.typ.NumMethod(); i++ {
 		method := s.typ.Method(i)
+		fmt.Println("DEBUG---输入类型有哪些方法:", method.Name, method.Type)
 		mType := method.Type
+
+		//判断函数的输入输出参数是否符合条件
 		if mType.NumIn() != 3 || mType.NumOut() != 1 {
 			continue
 		}
@@ -82,6 +88,7 @@ func (s *service) registerMethods() {
 			continue
 		}
 		argType, replyType := mType.In(1), mType.In(2)
+		fmt.Println("DEBUG---输入输出参数类型:", argType, replyType)
 		if !isExportedOrBuiltinType(argType) || !isExportedOrBuiltinType(replyType) {
 			continue
 		}

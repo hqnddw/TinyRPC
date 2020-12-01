@@ -17,12 +17,22 @@ func (f Foo) Sum(args Args, reply *int) error {
 	return nil
 }
 
+func (f Foo) Sub(args Args, reply *int) error {
+	*reply = args.Num1 - args.Num2
+	return nil
+}
+
+func (f Foo) Mul(args Args, reply *int) error {
+	*reply = args.Num1 * args.Num2
+	return nil
+}
+
 func startServer(addr chan string) {
 	var foo Foo
 	if err := GeeRPC.Register(&foo); err != nil {
 		log.Fatal("register error:", err)
 	}
-	// pick a free port
+	// 自动选择一个空闲的端口
 	l, err := net.Listen("tcp", ":0")
 	if err != nil {
 		log.Fatal("network error:", err)
