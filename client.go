@@ -11,6 +11,15 @@ import (
 	"sync"
 )
 
+/*
+对 net/rpc 而言，一个函数需要能够被远程调用，需要满足如下五个条件：
+	1.the method’s type is exported. – 方法所属类型是导出的。
+	2.the method is exported. – 方式是导出的。
+	3.the method has two arguments, both exported (or builtin) types. – 两个入参，均为导出或内置类型。
+	4.the method’s second argument is a pointer. – 第二个入参必须是一个指针。
+	5.the method has return type error. – 返回值为 error 类型。
+*/
+
 // 封装了结构体 Call 来承载一次 RPC 调用所需要的信息
 type Call struct {
 	Seq           uint64
